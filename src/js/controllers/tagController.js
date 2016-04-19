@@ -14,4 +14,14 @@ app.controller("tagController", function ($scope, $routeParams, $http) {
     }).catch(function(e){
         $scope.error = e;
     });
+
+    $scope.search = function(){
+        var url = 'src/api/tag/' + $scope.tag + '/' + $scope.amount;
+
+        $http.get(url).then(function(response){
+            $scope.photos = response.data;
+        }).catch(function(e){
+            $scope.error = e;
+        });
+    }
 });
