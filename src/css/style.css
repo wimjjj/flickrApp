@@ -1,0 +1,10 @@
+#imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flickrImg {
+    height: 250px;
+    margin-top: 10px;
+}

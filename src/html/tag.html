@@ -1,0 +1,7 @@
+<h1>{{ tag }}</h1>
+
+<div id="imgs">
+    <img ng-repeat="photo in photos track by $index" class="flickrImg" src="{{ photo }}">
+</div>
+
+<p>{{ error }}</p>
